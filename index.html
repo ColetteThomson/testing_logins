@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!-- example 1:  user sign in prompting user to enter 'first name', 'last name' - and then generating a username
+    NB: works only if script within html 
+    <form method="POST" name="form" action="">
+        <div><label for="fname">First Name: </label><input type="text" name="fname" id="fname" />
+        </div>
+        <div><label for="lname">Last Name: </label><input type="text" name="lname" id="lname" onblur="
+            if(document.form.username.value=='' && document.form.fname.value!='' && document.form.lname.value!='') {
+                var username = document.form.fname.value.substr(0,1) + document.form.lname.value.substr(0,49);
+                username = username.replace(/\s+/g, '');
+                username = username.replace(/\'+/g, '');
+                username = username.replace(/-+/g, '');
+                username = username.toLowerCase();
+                document.form.username.value = username;
+            }"/>
+        </div>
+        <div><label for="username">Username: </label><input type="text" name="username" id="username" />
+        </div>
+    </form>
+
+    <!--example 2: to validate user login details, allowing 3 attempts
+    NB:  doesn't give feedback to user if login fails
+    
+
+
+<title>Javascript Login Form Validation</title>
+<!-- Include CSS File Here 
+<link rel="stylesheet" href="css/style.css"/>
+<!-- Include JS File Here 
+
+</head>
+<body>
+<div class="container">
+<div class="main">
+<h2>Javascript Login Form Validation</h2>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : Formget<br/>Password : formget#123</b></span>
+</div>
+</div>-->
+
+<!--example 3: js onsubmit event with form validation.  when user clicks on submit, JS onsubmit event will
+call a function  NB: don't know if this works because CI formdump might be restricting invalid data feedback
+<div class="container">
+<div class="main">
+<form action="https://formdump.codeinstitute.net" method="post" onsubmit="return ValidationEvent()">
+<h2>Javascript Onsubmit Event Example</h2>
+<label>Name :</label>
+<input id="name" name="name" placeholder="Name" type="text">
+<label>Email :</label>
+<input id="email" name="email" placeholder="Valid Email" type="text">
+<label>Gender :</label>
+<input id="male" name="gender" type="radio" value="Male">
+<label>Male</label>
+<input id="female" name="gender" type="radio" value="Female">
+<label>Female</label>
+<label>Contact No. :</label>
+<input id="contact" name="contact" placeholder="Contact No." type="text">
+<input type="submit" value="Submit">
+<span>All type of validation will execute on OnSubmit Event.</span>
+</form>
+</div>
+</div> -->
+
+<!--example 4-->
+     
+      <script type = "text/javascript">
+         
+            // Form validation code will come here.
+         //-->
+      </script>      
+   </head>
+   
+   <body>
+      <form action = "https://formdump.codeinstitute.net" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">INDIA</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   
+
+
+<!--link to javascript file-->
+<script src="assets1/js1/script.js"></script> 
+</body>
+
+</html>
