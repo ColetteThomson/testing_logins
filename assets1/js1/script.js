@@ -70,7 +70,7 @@ function ValidationEvent() {
     }*/
     
 
-    /* example 4 */
+    /* example 4 - all works but email validation*/
     function validate() {
       
         if( document.myForm.Name.value == "" ) {
@@ -97,8 +97,7 @@ function ValidationEvent() {
         return( true );
      }
 
-
-    function validateEmail() {
+    /*function validateEmail() {
         var emailID = document.myForm.EMail.value;
         atpos = emailID.indexOf("@");
         dotpos = emailID.lastIndexOf(".");
@@ -109,4 +108,4 @@ function ValidationEvent() {
            return false;
         }
         return( true );
-     }
+     }*/
